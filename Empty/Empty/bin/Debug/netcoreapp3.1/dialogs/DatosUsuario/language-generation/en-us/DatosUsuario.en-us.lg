@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_KfiGbN()
+[Activity
+    Text = ${ChoiceInput_Prompt_KfiGbN_text()}
+]
+
+# ChoiceInput_Prompt_KfiGbN_text()
+- Tenemos promociones que le pude interesar  , selecione parte del menu que desea consultar:

@@ -1,0 +1,106 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "l2dpQs",
+    "name": "MENUCOMBO",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "sHZx50"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "tv5Fdc"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_tv5Fdc()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or "
+          },
+          "property": "user.combo",
+          "choices": [
+            "Big Box",
+            "Chick n share",
+            "Mega familiar"
+          ]
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "ybRlUC"
+          },
+          "condition": "user.combo",
+          "cases": [
+            {
+              "value": "Big Box",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "WjA8VR"
+                  },
+                  "activity": "${SendActivity_WjA8VR()}"
+                }
+              ]
+            },
+            {
+              "value": "Chick n share",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "4vtn82"
+                  },
+                  "activity": "${SendActivity_4vtn82()}"
+                }
+              ]
+            },
+            {
+              "value": "Mega familiar",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "4MQabp"
+                  },
+                  "activity": "${SendActivity_4MQabp()}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Qiq476"
+          },
+          "activity": "${SendActivity_Qiq476()}"
+        }
+      ]
+    }
+  ],
+  "generator": "MENUCOMBO.lg",
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": []
+  },
+  "id": "MENUCOMBO"
+}

@@ -1,0 +1,51 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_tv5Fdc()
+[Activity
+    Text = ${ChoiceInput_Prompt_tv5Fdc_text()}
+]
+
+# ChoiceInput_Prompt_tv5Fdc_text()
+- BIENVENDIDO AL MENU COMBO !
+# SendActivity_WjA8VR()
+[Activity
+    Text = ${SendActivity_WjA8VR_text()}
+]
+
+# SendActivity_WjA8VR_text()
+- ```PRECIO : 25.50 S/.
+\- 1 porcion grande de arroz
+\- 1 porcion grande de papas
+\- 6 piezas de pollo + cremas 
+\- 1 Lt de gaseosa + 2 helados extra```
+# SendActivity_4vtn82()
+[Activity
+    Text = ${SendActivity_4vtn82_text()}
+]
+
+# SendActivity_4vtn82_text()
+- ```PRECIO : 28.90 S/.
+\- 1 porcion grande de papas
+\- 8 piezas de pollo + cremas 
+\- 1 Lt de gaseosa 
+\- 2 porciones medianas de arroz
+\- ensalada  + 4 hot wings```
+# SendActivity_4MQabp()
+[Activity
+    Text = ${SendActivity_4MQabp_text()}
+]
+
+# SendActivity_4MQabp_text()
+- ```PRECIO : 55.00 S/.
+\- 2 porcion grande de papas
+\- 10 piezas de pollo + cremas 
+\- 1Lt 1/2 de gaseosa 
+\- 2 porciones medianas de arroz
+\- ensalada  + 4 hot wings + 4 pies de manzana```
+# SendActivity_Qiq476()
+[Activity
+    Text = ${SendActivity_Qiq476_text()}
+]
+
+# SendActivity_Qiq476_text()
+- Gracias por su atencion consulta :)

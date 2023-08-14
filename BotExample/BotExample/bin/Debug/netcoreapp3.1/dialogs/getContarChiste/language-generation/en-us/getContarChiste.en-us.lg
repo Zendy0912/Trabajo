@@ -1,0 +1,11 @@
+[import](common.lg)
+
+# ContarChiste()
+-¿Qué hace una abeja en el gimnasio? ¡Zum-ba
+# SendActivity_NIGhd2()
+[Activity
+    Text = ${SendActivity_NIGhd2_text()}
+]
+
+# SendActivity_NIGhd2_text()
+- ${ContarChiste()}

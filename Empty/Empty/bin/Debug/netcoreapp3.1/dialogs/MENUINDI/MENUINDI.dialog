@@ -1,0 +1,106 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "iSrjro",
+    "name": "MENUINDI",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "TjizNy"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "uOTB0Y"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_uOTB0Y()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or "
+          },
+          "choices": [
+            "Nugget box",
+            "Hot Wings Box",
+            "Chicken box "
+          ],
+          "property": "user.individual"
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "IDKRnw"
+          },
+          "condition": "user.individual",
+          "cases": [
+            {
+              "value": "Nugget box",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "JKgpya"
+                  },
+                  "activity": "${SendActivity_JKgpya()}"
+                }
+              ]
+            },
+            {
+              "value": "Hot Wings Box",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "JKgpya"
+                  },
+                  "activity": "${SendActivity_JKgpya()}"
+                }
+              ]
+            },
+            {
+              "value": "Chicken box ",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "re3BhK"
+                  },
+                  "activity": "${SendActivity_re3BhK()}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "FBF87M"
+          },
+          "activity": "${SendActivity_FBF87M()}"
+        }
+      ]
+    }
+  ],
+  "generator": "MENUINDI.lg",
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": []
+  },
+  "id": "MENUINDI"
+}

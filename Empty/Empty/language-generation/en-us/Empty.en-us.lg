@@ -1,0 +1,24 @@
+[import](common.lg)
+
+# SendActivity_wELAGi()
+[Activity
+    Text = ${SendActivity_wELAGi_text()}
+]
+
+# SendActivity_wELAGi_text()
+- no se reconoce la palabra
+# TextInput_Prompt_99KdB1()
+[Activity
+    Text = ${TextInput_Prompt_99KdB1_text()}
+]
+
+# TextInput_Prompt_99KdB1_text()
+- ```Bienvenido a nuestra tienda de comida rapida!.     
+¿Cual es tu nombre ?```
+# SendActivity_859266()
+[Activity
+    Text = ${SendActivity_859266_text()}
+]
+
+# SendActivity_859266_text()
+- Bienvenido ${dialog.name}

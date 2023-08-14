@@ -1,0 +1,38 @@
+[import](common.lg)
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# SendActivity_UTC_now()
+- IF: ${getTimeOfDay(utcNow()) == 'morning'}    
+- Good morning! 
+- ELSEIF: ${getTimeOfDay(utcNow()) == 'afternoon'}    
+- Good afternoon! 
+- ELSE:    
+- Good evening!
+# SendActivity_859266()
+[Activity
+    Text = ${SendActivity_859266_text()}
+    SuggestedActions = ¡Cuéntame un chiste! | Libros populares
+]
+
+# SendActivity_859266_text()
+- ${SendActivity_UTC_now()}
+# SendActivity_3K7eLC()
+[Activity
+    Text = ${SendActivity_3K7eLC_text()}
+]
+
+# SendActivity_3K7eLC_text()
+- Success!
+# SendActivity_qOKpIa()
+[Activity
+    Text = ${SendActivity_qOKpIa_text()}
+]
+
+# SendActivity_qOKpIa_text()
+- Sorry, it looks like I can't load the most popular books

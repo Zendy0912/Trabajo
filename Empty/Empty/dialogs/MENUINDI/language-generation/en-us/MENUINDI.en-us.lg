@@ -1,0 +1,47 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_uOTB0Y()
+[Activity
+    Text = ${ChoiceInput_Prompt_uOTB0Y_text()}
+]
+
+# ChoiceInput_Prompt_uOTB0Y_text()
+- BIENVENIDOS AL MENU INDIVIDUAL !
+# SendActivity_TlXXr9()
+[Activity
+    Text = ${SendActivity_TlXXr9_text()}
+]
+
+# SendActivity_TlXXr9_text()
+- ```PRECIO 10.50  
+\- porcion de papas individual\- 2 piezas de pollo + 1 sol te damos una gaseosa```
+# SendActivity_JKgpya()
+[Activity
+    Text = ${SendActivity_JKgpya_text()}
+]
+
+# SendActivity_JKgpya_text()
+- ```PRECIO 12.50
+\- porcion de papas individual 
+\- 2 piezas de pollo + 1 sol te damos una gaseosa
+
+```
+# SendActivity_re3BhK()
+[Activity
+    Text = ${SendActivity_re3BhK_text()}
+]
+
+# SendActivity_re3BhK_text()
+- ```
+PRECIO 16.50
+\- porcion de papas individual 
+\- 4 piezas de pollo 
+\- ensalada mixta
+\- 1 vaso de gaseosa```
+# SendActivity_FBF87M()
+[Activity
+    Text = ${SendActivity_FBF87M_text()}
+]
+
+# SendActivity_FBF87M_text()
+- Gracias por su consulta :)

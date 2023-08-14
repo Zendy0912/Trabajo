@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_4gezv5()
+[Activity
+    Text = ${SendActivity_4gezv5_text()}
+]
+
+# SendActivity_4gezv5_text()
+- ${join(
+    take(
+        select(
+            dialog.nyt_api_response.content.results.books,
+            book,
+            book.title + ' ' + book.contributor)
+        , 5),
+    ', ')}
